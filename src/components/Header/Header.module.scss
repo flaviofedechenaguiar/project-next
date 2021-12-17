@@ -1,0 +1,29 @@
+.header {
+  height: 9rem;
+  padding: 0 7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 3rem;
+  background: var(--dark);
+  h1 {
+    color: var(--white);
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: 5rem;
+    column-gap: 2rem;
+    h1 {
+      font-size: 1.4rem;
+      line-height: 1.7rem;
+    }
+  }
+}
