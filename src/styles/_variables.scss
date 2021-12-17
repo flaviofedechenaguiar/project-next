@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Roboto:wght@400;700&display=swap");
+
+// font-family: 'Inter', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
+:root {
+  // ANCHOR color-variables
+
+  --white: #ffffff;
+  --dark: #1f1f1f;
+  --yellow: #ffb800;
+  --black: #050e12;
+  --background: #191b1f;
+
+  --gray-100: #828282;
+  --gray-200: #515151;
+  --gray-300: #b6b6b6;
+  --gray-400: #e2e2e2;
+  --gray-500: #ededed;
+
+  // ANCHOR font-variables
+  --heading: "Inter", sans-serif;
+  --body: "Roboto", sans-serif;
+
+  // ANCHOR border-variables
+  --border-card: 0.6rem;
+  --border-field: 0.8rem;
+}
