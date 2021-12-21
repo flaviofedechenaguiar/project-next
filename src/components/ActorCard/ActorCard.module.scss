@@ -21,3 +21,28 @@
     color: var(--gray-100);
   }
 }
+
+// ANCHOR breakpoints
+
+@media (max-width: 375px) {
+  .actor-card {
+    max-width: 10rem;
+    .actor-card__image-wrapper {
+      width: 10rem;
+      height: 10rem;
+      position: relative;
+      border-radius: 100%;
+      overflow: hidden;
+    }
+    h4 {
+      height: 1.3rem;
+      margin-top: 0.8rem;
+      font-size: 0.9rem;
+      line-height: 1.1rem;
+    }
+    span {
+      font-size: 0.7rem;
+      line-height: 0.8rem;
+    }
+  }
+}
