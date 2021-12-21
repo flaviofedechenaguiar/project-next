@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./Footer.module.scss";
 
 export const Footer: React.FC = () => {
@@ -9,9 +10,9 @@ export const Footer: React.FC = () => {
         </p>
         <address>
           Desenvolvido por{" "}
-          <a href="https://www.linkedin.com/in/flaviofedechen/" target="_blank">
-            Flavio Fedechen Aguiar
-          </a>
+          <Link href="https://www.linkedin.com/in/flaviofedechen/">
+            <a target="_blank">Flavio Fedechen Aguiar</a>
+          </Link>
         </address>
       </footer>
     </>
