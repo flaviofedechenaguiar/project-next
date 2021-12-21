@@ -47,10 +47,11 @@ export const useActors = () => {
       let {
         data: { filmography },
       } = await ActorsService.getFilmography(id);
-      filmography.map((film) => ({
+      filmography = filmography.map((film) => ({
         ...film,
         id: handleRemovePrefixID(film.id),
       }));
+
       setFilmography((prevState) => filmography);
     } catch (err) {
       console.log(err);
