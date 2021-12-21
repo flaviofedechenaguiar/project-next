@@ -1,27 +1,38 @@
 import Image from "next/image";
-
+import Link from "next/link";
 import styles from "./ActorCard.module.scss";
 
 interface Props {
   imageUrl: string;
   name: string;
-  quantityMovies: number;
+  age: number;
+  redirectLink: string;
 }
 
 export const ActorCard: React.FC<Props> = ({
   imageUrl,
   name,
-  quantityMovies,
+  age,
+  redirectLink,
 }) => {
   return (
     <>
-      <div className={styles["actor-card"]}>
-        <div className={styles["actor-card__image-wrapper"]}>
-          <Image alt={name} src={imageUrl} layout="fill" objectFit="contain" />
-        </div>
-        <h4>{name}</h4>
-        <span>{quantityMovies}</span>
-      </div>
+      <Link href={redirectLink}>
+        <a>
+          <div className={styles["actor-card"]}>
+            <div className={styles["actor-card__image-wrapper"]}>
+              <Image
+                alt={name}
+                src={imageUrl}
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+            <h4>{name}</h4>
+            <span>{age}</span>
+          </div>
+        </a>
+      </Link>
     </>
   );
 };
