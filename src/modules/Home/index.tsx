@@ -32,7 +32,6 @@ export const Home: React.FC = () => {
 
   return (
     <>
-      <Header />
       <main className={styles["home"]}>
         <Banner banners={banners} />
         <div className={styles["home__popular-films-wrapper"]}>
@@ -60,7 +59,6 @@ export const Home: React.FC = () => {
           />
         </div>
       </main>
-      <Footer />
     </>
   );
 };
