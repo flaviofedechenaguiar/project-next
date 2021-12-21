@@ -24,11 +24,9 @@ export const Search: React.FC = () => {
 
   return (
     <>
-      <Header />
       <main className={styles["search"]}>
         <ListResults films={films} />
       </main>
-      <Footer />
     </>
   );
 };
