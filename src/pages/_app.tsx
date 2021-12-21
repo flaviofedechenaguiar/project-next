@@ -3,6 +3,7 @@ import { AppProps } from "next/app";
 import Head from "next/head";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
+import { Container } from "../components/Container";
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
@@ -11,7 +12,9 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
         <title>Gazin Films</title>
       </Head>
       <Header />
-      <Component {...pageProps} />
+      <Container>
+        <Component {...pageProps} />
+      </Container>
       <Footer />
     </>
   );
