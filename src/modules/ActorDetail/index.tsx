@@ -23,7 +23,6 @@ export const ActorDetail: React.FC = () => {
 
   return (
     <>
-      <Header />
       <main className={styles["actor-detail"]}>
         <section className={styles["actor-detail__perfil"]}>
           <div className={styles["actor-detail__image-wrapper"]}>
@@ -58,7 +57,6 @@ export const ActorDetail: React.FC = () => {
           />
         </section>
       </main>
-      <Footer />
     </>
   );
 };
