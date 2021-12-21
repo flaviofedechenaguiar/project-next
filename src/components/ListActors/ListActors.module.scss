@@ -1,0 +1,50 @@
+.list-actors {
+  width: 100%;
+  // max-width: 136.2rem;
+  // padding: 0 3.2rem;
+
+  h2 {
+    padding-bottom: 3.5rem;
+    color: var(--white);
+  }
+
+  .list-actors__swiper-wrapper {
+    position: relative;
+    width: 100%;
+
+    .list-actors__swiper-button-next {
+      right: -3.2rem;
+      bottom: 15.5rem;
+    }
+
+    .list-actors__swiper-button-prev {
+      left: -3.2rem;
+      bottom: 15.5rem;
+    }
+  }
+}
+
+// ANCHOR breakpoints
+
+@media (max-width: 768px) {
+  .list-actors {
+    // padding: 0;
+
+    .list-actors__swiper-wrapper {
+      .list-actors__swiper-button-next,
+      .list-actors__swiper-button-prev {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .list-actors {
+    h2 {
+      font-size: 1.4rem;
+      line-height: 1.7rem;
+      padding-bottom: 1.1rem;
+    }
+  }
+}
