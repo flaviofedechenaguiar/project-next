@@ -1,0 +1,13 @@
+.search {
+  padding: 4.3rem 7.1rem;
+  padding-bottom: 6.6rem;
+}
+
+// ANCHOR breakpoints
+
+@media (max-width: 375px) {
+  .search {
+    padding: 1.6rem 1.4rem;
+    padding-bottom: 2.6rem;
+  }
+}
