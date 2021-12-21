@@ -16,6 +16,12 @@ export const useActors = () => {
     return id.replace(PREFIX_BAR, "").replace(PREFIX_NAME, "");
   }
 
+  function handleRemovePrefixIDFilm(id: string) {
+    const PREFIX_BAR = /[\/]/g;
+    const PREFIX_NAME = /\btitle/;
+    return id.replace(PREFIX_BAR, "").replace(PREFIX_NAME, "");
+  }
+
   const getAllActors = async () => {
     const LIMIT_REQUEST = 7;
     try {
@@ -49,7 +55,7 @@ export const useActors = () => {
       } = await ActorsService.getFilmography(id);
       filmography = filmography.map((film) => ({
         ...film,
-        id: handleRemovePrefixID(film.id),
+        id: handleRemovePrefixIDFilm(film.id),
       }));
 
       setFilmography((prevState) => filmography);
