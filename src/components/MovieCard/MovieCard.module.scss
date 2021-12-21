@@ -1,10 +1,8 @@
 .movie-card {
-  width: 100%;
-  max-width: 19.3rem;
+  width: 19.3rem;
   height: 35.5rem;
   border-radius: var(--border-card);
   overflow: hidden;
-  background: var(--black);
   .movie-card__image-wrapper {
     width: 100%;
     height: 28.9rem;
@@ -25,6 +23,36 @@
     span {
       display: block;
       color: var(--gray-100);
+    }
+  }
+}
+
+// ANCHOR breakpoints
+
+@media (max-width: 375px) {
+  .movie-card {
+    width: 10rem;
+    height: 17.1rem;
+    .movie-card__image-wrapper {
+      width: 100%;
+      height: 13.9rem;
+    }
+    .movie-card__wrapper-text {
+      height: auto;
+      margin-top: 0.75rem;
+      padding: 0 0.9rem;
+      h4 {
+        height: unset;
+        font-size: 0.9rem;
+        line-height: 1.1rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      span {
+        font-size: 0.5rem;
+        line-height: 0.6rem;
+      }
     }
   }
 }
