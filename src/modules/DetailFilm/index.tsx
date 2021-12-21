@@ -20,7 +20,6 @@ export const DetailFilm: React.FC = function () {
 
   return (
     <>
-      <Header />
       <main className={styles["detail-film"]}>
         <div
           className={`${!detailFilm ? "loading" : null} ${
@@ -70,7 +69,6 @@ export const DetailFilm: React.FC = function () {
           <p>{detailFilm?.summary?.text}</p>
         </section>
       </main>
-      <Footer />
     </>
   );
 };
